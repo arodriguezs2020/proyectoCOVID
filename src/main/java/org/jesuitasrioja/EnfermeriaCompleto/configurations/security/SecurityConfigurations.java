@@ -51,7 +51,7 @@ public class SecurityConfigurations extends WebSecurityConfigurerAdapter {
 				.antMatchers(HttpMethod.POST, "/alumno/**").hasRole("ADMIN") // añadir un alumno
 				.antMatchers(HttpMethod.PUT, "/alumno/**").hasRole("ADMIN") // modificar un alumno
 				.antMatchers(HttpMethod.DELETE, "/alumno/**").hasRole("ADMIN") // borrar un alumno
-				//.antMatchers(HttpMethod.POST, "/usuario/**").hasRole("ADMIN") // añadir un usuario
+				.antMatchers(HttpMethod.POST, "/usuario/**").hasRole("ADMIN") // añadir un usuario
 				.antMatchers(HttpMethod.PUT, "/usuario/**").hasRole("ADMIN") // modificar un alumno
 				.antMatchers(HttpMethod.DELETE, "/usuario/**").hasRole("ADMIN") // borrar un alumno
 				.anyRequest().permitAll().and().csrf().disable();
