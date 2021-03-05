@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class ResponsableDTO implements Serializable{
 	
-	private String identificador;
+	private long identificador;
 	private String telefono;
 	private String parentesco;
 	private String nombre;

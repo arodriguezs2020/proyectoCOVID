@@ -7,5 +7,5 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class AlumnoService extends BaseService<Alumno, String, AlumnoRepository> {
-
+	
 }

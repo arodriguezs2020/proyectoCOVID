@@ -5,6 +5,6 @@ import org.jesuitasrioja.EnfermeriaCompleto.persistencia.repositories.Responsabl
 import org.springframework.stereotype.Service;
 
 @Service
-public class ResponsableService extends BaseService<Responsable, String, ResponsableRepository>{
+public class ResponsableService extends BaseService<Responsable, Long, ResponsableRepository>{
 
 }

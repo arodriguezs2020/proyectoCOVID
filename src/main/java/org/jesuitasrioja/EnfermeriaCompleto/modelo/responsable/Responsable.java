@@ -3,6 +3,8 @@ package org.jesuitasrioja.EnfermeriaCompleto.modelo.responsable;
 import java.io.Serializable;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -21,7 +23,8 @@ import lombok.NoArgsConstructor;
 public class Responsable implements Serializable{
 	@Id
 	@Include
-	private String identificador;
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private long identificador;
 	private String telefono;
 	private String parentesco;
 	private String nombre;
