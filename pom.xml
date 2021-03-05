@@ -31,12 +31,9 @@
 			<artifactId>spring-boot-starter-tomcat</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.22</version>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
 		</dependency>
-		<!-- <dependency> <groupId>org.postgresql</groupId> <artifactId>postgresql</artifactId> 
-			</dependency> -->
 		<!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt-impl -->
 		<dependency>
 			<groupId>io.jsonwebtoken</groupId>
